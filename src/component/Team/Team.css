@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.lg-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  outline: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.title-1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 2.9rem;
+}
+
+.red-paragraph {
+  text-transform: uppercase;
+  color: #ef3e36;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  color: #ef3e36;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.card-text {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #818187;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-link a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #b5b5b9;
+}
+
+.grey-text {
+  margin-top: 30px;
+  color: #818187;
+  font-weight: 300;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.7rem;
+}
+
+.primary-btn {
+  border-style: none;
+  border-radius: 3px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: white;
+  background: #ef3e36;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+.primary-btn:hover {
+  background: #c91810;
+}
+
+.primary-btn:hover {
+  background: #c91810;
+}
+
+@media (max-width: 600px) {
+  .OurWork-grid-bottom {
+    padding: 80px 0;
+    grid-gap: 30px;
+    grid-template-areas: 'box-1' 'box-2' 'box-3' 'box-4';
+    -ms-grid-columns: repeat 1fr;
+    grid-template-columns: repeat 1fr;
+  }
+}
+
+.Team {
+  padding-bottom: 150px;
+}
+
+.Team-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.grid-team {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-team .picture-container img {
+  width: 100%;
+}
+
+.grid-team .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-team .social-media .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background: #ef3e36;
+  margin-right: 10px;
+  -webkit-transition: background 0.5s, -webkit-transform 0.5s;
+  transition: background 0.5s, -webkit-transform 0.5s;
+  transition: background 0.5s, transform 0.5s;
+  transition: background 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+
+.grid-team .social-media .circle:last-child {
+  margin-right: 0;
+}
+
+.grid-team .social-media .circle:hover {
+  background: #e01b12;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.grid-team .social-media .circle i {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.grid-team .Team-content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .grid-team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,32 @@
+.OurLocation
+    position: relative
+    height: 550px
+
+    &-container
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr))
+        grid-gap: 30px
+    &-left-side
+        padding: 80px 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .address 
+            line-height: 2rem
+        
+        
+        img
+            margin: 30px 0
+
+        
+    iframe 
+        height: 550px
+        width: 100%
+
+@media (max-width: 600px)
+    .OurLocation
+        &-container
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+            grid-gap: 30px

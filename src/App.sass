@@ -1,0 +1,90 @@
+@import './general style/Fonts'
+@import './general style/Containers'
+@import './general style/Colors'
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Oswald', sans-serif
+    outline: none
+
+    a 
+        text-decoration: none
+
+@mixin center($justify-content)
+    display: flex
+    justify-content: $justify-content
+    align-items: center
+
+.title-1
+    font-size: 2.5rem
+    text-transform: uppercase
+    letter-spacing: .5px
+    line-height: 2.9rem
+
+.red-paragraph 
+    text-transform: uppercase 
+    color: $red
+    font-weight: 700
+    font-size: .8rem
+    letter-spacing: .5px
+    margin-bottom: 15px
+
+.card-title
+        color: $red
+        letter-spacing: 1px
+        font-size: 1.4rem
+        text-transform: uppercase
+        font-weight: 700
+        margin-bottom: 30px
+
+.card-text
+    font-size: 1rem
+    letter-spacing: .5px
+    text-align: center
+    margin-bottom: 30px
+    color: $grey-text
+    font-family: 'Playfair Display', serif
+
+
+
+.card-link a
+    font-size: .9rem 
+    text-transform: uppercase 
+    color: lighten( $grey-text, 20% )
+
+.grey-text
+    margin-top: 30px
+    color: $grey-text
+    font-weight: 300
+    font-family: 'Playfair Display', serif
+    line-height: 1.7rem
+
+.primary-btn 
+    border-style: none
+    border-radius: 3px
+    padding: 15px 25px
+    text-transform: uppercase
+    font-size: 13px
+    color: white
+    background: $red
+    cursor: pointer
+    letter-spacing: .5px
+    transition: background .3s ease-in
+
+    &:hover
+        background: darken($red, 15% )
+
+    &:hover
+        background: darken($red, 15% )
+        
+
+
+
+
+@media (max-width: 600px)
+    .OurWork-grid-bottom
+        padding: 80px 0
+        grid-gap: 30px
+        grid-template-areas: "box-1" "box-2" "box-3""box-4"
+        grid-template-columns: repeat (1fr)

@@ -1,0 +1,35 @@
+@import '../../general style/Colors'
+.Brands
+    padding: 70px 0
+
+    p 
+        text-align: center
+        text-transform: uppercase
+        color: $red
+        padding-bottom: 30px
+        font-size: .8rem
+        font-weight: 600
+        letter-spacing: .5px
+
+    &-container 
+        display: flex
+        justify-content: space-around
+
+        img 
+            height: auto
+            max-height: 32px
+
+@media (max-width: 600px)
+    .Brands
+        &-container
+            display: grid
+            grid-template-columns: repeat(3, minmax(100px , 1fr))
+            justify-items: center
+            align-items: center
+            img 
+                margin: 8px 
+                height: 25px
+                
+                &:nth-child(3n)
+                    margin-right: 0
+                    

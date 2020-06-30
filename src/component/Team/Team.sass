@@ -1,0 +1,50 @@
+@import '../../App'
+
+.Team
+    padding-bottom: 150px
+
+    &-top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 100px
+
+.grid-team
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    .picture-container
+        img
+            width: 100%
+    .social-media
+        display: flex
+        .circle
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            height: 35px
+            width: 35px
+            background: $red
+            margin-right: 10px
+            transition: background .5s , transform .5s
+            cursor: pointer
+
+            &:last-child
+                margin-right: 0
+
+            &:hover
+                background: darken($red, 10% )
+                transform: scale(1.05)
+
+            i
+                color: white
+                font-size: .9rem
+
+    .Team-content
+        align-items: center
+        justify-content: center
+        display: flex
+        flex-direction: column
+
+@media (max-width: 600px)
+    .grid-team
+        grid-template-columns: repeat(1,1fr)

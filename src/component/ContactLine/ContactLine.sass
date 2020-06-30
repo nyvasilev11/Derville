@@ -1,0 +1,54 @@
+@import '../../general style/Colors'
+
+.ContactLine
+    padding: 100px 0
+    background: $red
+
+    &-grid
+        display: grid
+        grid-gap: 70px
+        grid-template-columns: 70% 30%
+        
+
+    &-left-side
+        display: flex
+        justify-content: center
+        flex-direction: column
+        color: white
+        text-transform: uppercase
+
+        #text-1
+            font-size: .9rem
+            
+        #text-2 
+            font-size:  2.5rem
+            font-weight: 700 
+            letter-spacing: .5px
+
+    &-right-side
+        display: flex
+        justify-content: center
+        align-items: center
+        button 
+            margin-right: 30px
+        a 
+            color: white
+            transition: color .5s
+            &:hover
+                color: #e3e3e3
+
+@media (max-width: 600px)
+    .ContactLine
+        padding: 80px 0
+        background: $red
+
+        &-grid
+            grid-gap: 30px
+            grid-template-columns: repeat(1,1fr)
+        #text-1
+            text-align: center
+            
+        #text-2
+            font-size: 1.8em
+            text-align: center
+            margin-bottom: 20px
